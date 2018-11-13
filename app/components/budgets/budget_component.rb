@@ -19,4 +19,17 @@ class Budgets::BudgetComponent < ApplicationComponent
 
       MapLocation.where(investment_id: investments).map(&:json_data)
     end
+
+    def geographies_data
+      Geography.for_budget(budget).map do |geography|
+        {
+          outline_points: geography.parsed_outline_points,
+          color: geography.color,
+          headings: geography.headings.map do |heading|
+            helpers.link_to heading.name_with_budget,
+              budget_investments_path(heading.budget, params: { heading_id: heading.id })
+          end
+        }
+      end
+    end
 end

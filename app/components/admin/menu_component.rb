@@ -33,7 +33,7 @@ class Admin::MenuComponent < ApplicationComponent
 
     def settings?
       controllers_names = ["settings", "tags", "geozones", "images", "content_blocks",
-                           "local_census_records", "imports"]
+                           "local_census_records", "imports", "geographies"]
       controllers_names.include?(controller_name) &&
         controller.class.parent != Admin::Poll::Questions::Answers
     end
@@ -329,6 +329,14 @@ class Admin::MenuComponent < ApplicationComponent
         t("admin.menu.site_customization.content_blocks"),
         admin_site_customization_content_blocks_path,
         controller_name == "content_blocks"
+      ]
+    end
+
+    def geographies_link
+      [
+        t("admin.menu.geographies"),
+        admin_geographies_path,
+        controller_name == "geographies"
       ]
     end
 
