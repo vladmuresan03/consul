@@ -413,6 +413,11 @@ class User < ApplicationRecord
     devise_mailer.send(notification, self, *args).deliver_later
   end
 
+  def add_subscriptions_token
+    self.subscriptions_token = SecureRandom.base58(32)
+    save!
+  end
+
   private
 
     def clean_document_number
