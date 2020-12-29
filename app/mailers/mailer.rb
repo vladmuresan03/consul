@@ -21,8 +21,10 @@ class Mailer < ApplicationMailer
   def reply(reply)
     @email = ReplyEmail.new(reply)
     @email_to = @email.to
+    @receiver = @email.recipient
+    manage_subscriptions_token(@receiver)
 
-    with_user(@email.recipient) do
+    with_user(@receiver) do
       mail(to: @email_to, subject: @email.subject) if @email.can_be_sent?
     end
   end
