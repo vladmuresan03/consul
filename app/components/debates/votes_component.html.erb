@@ -27,9 +27,9 @@
     <span class="percentage"><%= votes_percentage("dislikes", debate) %></span>
   </div>
 
+  <%= render Shared::ParticipationNotAllowedComponent.new(debate, cannot_vote_text: cannot_vote_text) %>
+
   <span class="total-votes">
     <%= t("debates.debate.votes", count: debate.votes_score) %>
   </span>
-
-  <%= render Shared::ParticipationNotAllowedComponent.new(debate, cannot_vote_text: cannot_vote_text) %>
 </div>
