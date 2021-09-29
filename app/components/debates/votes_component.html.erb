@@ -13,8 +13,6 @@
     <span class="percentage"><%= votes_percentage("likes", debate) %></span>
   </div>
 
-  <span class="divider"></span>
-
   <div class="against inline-block">
     <%= button_to vote_debate_path(debate, value: "no"),
         class: "unlike #{voted_classes[:against]}",
