@@ -66,23 +66,22 @@
 
   .like,
   .unlike {
-    line-height: rem-calc(48);
     vertical-align: super;
     text-decoration: none;
+  }
 
-    .percentage {
-      color: $text;
-      display: inline-block;
-      font-size: $small-font-size;
-      line-height: $line-height * 2;
-      padding-right: $line-height / 2;
-      vertical-align: top;
+  .percentage {
+    color: $text;
+    display: inline-block;
+    font-size: $small-font-size;
+    line-height: $line-height * 2;
+    padding-right: $line-height / 2;
+    vertical-align: top;
 
-      @include breakpoint(medium) {
-        display: block;
-        line-height: $line-height;
-        padding-right: 0;
-      }
+    @include breakpoint(medium) {
+      display: block;
+      line-height: $line-height;
+      padding-right: 0;
     }
   }
 
