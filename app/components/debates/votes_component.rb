@@ -16,6 +16,14 @@ class Debates::VotesComponent < ApplicationComponent
       debate.votable_by?(current_user)
     end
 
+    def voted_up?
+      current_user&.voted_up_on?(debate)
+    end
+
+    def voted_down?
+      current_user&.voted_down_on?(debate)
+    end
+
     def organization?
       current_user&.organization?
     end

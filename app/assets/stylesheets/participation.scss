@@ -86,7 +86,7 @@
     }
   }
 
-  .voted {
+  [aria-pressed="true"] {
 
     .icon-like,
     .icon-unlike {
