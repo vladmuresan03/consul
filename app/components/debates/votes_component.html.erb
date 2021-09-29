@@ -5,6 +5,7 @@
         title: t("votes.agree"),
         method: "post",
         remote: true,
+        "aria-label": agree_aria_label,
         "aria-pressed": voted_up?,
         disabled: !current_user do %>
       <span class="icon-like">
@@ -22,6 +23,7 @@
         title: t("votes.disagree"),
         method: "post",
         remote: true,
+        "aria-label": disagree_aria_label,
         "aria-pressed": voted_down?,
         disabled: !current_user do %>
       <span class="icon-unlike">

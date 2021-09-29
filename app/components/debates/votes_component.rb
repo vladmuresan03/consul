@@ -24,6 +24,14 @@ class Debates::VotesComponent < ApplicationComponent
       current_user&.voted_down_on?(debate)
     end
 
+    def agree_aria_label
+      t("votes.agree_label", title: debate.title)
+    end
+
+    def disagree_aria_label
+      t("votes.disagree_label", title: debate.title)
+    end
+
     def organization?
       current_user&.organization?
     end
