@@ -151,7 +151,9 @@ en:
       wrong_price_format: Only integer numbers
       investment:
         add: Vote
+        add_label: "Vote %{investment}"
         already_added: You have already added this investment project
+        remove_label: "Remove your vote for %{investment}"
         support_title: Support this project
         supports:
           one: 1 support
