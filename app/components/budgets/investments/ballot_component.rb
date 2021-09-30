@@ -29,7 +29,7 @@ class Budgets::Investments::BallotComponent < ApplicationComponent
     end
 
     def remove_vote_aria_label
-      t("budgets.investments.investment.remove_label", investment: investment.title)
+      t("budgets.ballots.show.remove_label", investment: investment.title)
     end
 
     def link_to_my_heading

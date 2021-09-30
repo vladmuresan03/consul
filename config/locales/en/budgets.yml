@@ -23,6 +23,7 @@ en:
             other: "You can vote up to <span>%{count}</span> projects"
         no_balloted_group_yet: "You have not voted on this group yet, go vote!"
         remove: Remove vote
+        remove_label: "Remove your vote for %{investment}"
         voted:
           one: "You have voted <span>one</span> investment."
           other: "You have voted <span>%{count}</span> investments."
@@ -153,7 +154,6 @@ en:
         add: Vote
         add_label: "Vote %{investment}"
         already_added: You have already added this investment project
-        remove_label: "Remove your vote for %{investment}"
         support_title: Support this project
         supports:
           one: 1 support
