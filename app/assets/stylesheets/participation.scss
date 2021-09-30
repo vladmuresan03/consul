@@ -26,8 +26,7 @@
     margin-top: 0;
   }
 
-  .icon-like,
-  .icon-unlike {
+  button {
     background: #fff;
     border: 2px solid;
     border-radius: rem-calc(3);
@@ -46,7 +45,8 @@
     }
   }
 
-  .icon-like {
+  .in-favor button {
+    @include has-fa-icon(thumbs-up, solid);
 
     &:hover,
     &:active {
@@ -55,7 +55,8 @@
     }
   }
 
-  .icon-unlike {
+  .against button {
+    @include has-fa-icon(thumbs-down, solid);
 
     &:hover,
     &:active {
@@ -86,29 +87,21 @@
   }
 
   [aria-pressed="true"] {
+    color: #fff;
+  }
 
-    .icon-like,
-    .icon-unlike {
-      color: #fff;
-    }
+  .in-favor [aria-pressed="true"] {
+    background: $like;
+    border: 2px solid $like;
+  }
 
-    .icon-like {
-      background: $like;
-      border: 2px solid $like;
-    }
-
-    .icon-unlike {
-      background: $unlike;
-      border: 2px solid $unlike;
-    }
+  .against [aria-pressed="true"] {
+    background: $unlike;
+    border: 2px solid $unlike;
   }
 
   .no-voted {
-
-    .icon-like,
-    .icon-unlike {
-      opacity: 0.3;
-    }
+    opacity: 0.3;
   }
 
   .total-votes {

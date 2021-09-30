@@ -8,9 +8,7 @@
         "aria-label": agree_aria_label,
         "aria-pressed": voted_up?,
         disabled: !current_user do %>
-      <span class="icon-like">
-        <span class="show-for-sr"><%= t("votes.agree") %></span>
-      </span>
+      <span class="show-for-sr"><%= t("votes.agree") %></span>
     <% end %>
     <span class="percentage"><%= votes_percentage("likes", debate) %></span>
   </div>
@@ -26,9 +24,7 @@
         "aria-label": disagree_aria_label,
         "aria-pressed": voted_down?,
         disabled: !current_user do %>
-      <span class="icon-unlike">
-        <span class="show-for-sr"><%= t("votes.disagree") %></span>
-      </span>
+      <span class="show-for-sr"><%= t("votes.disagree") %></span>
     <% end %>
     <span class="percentage"><%= votes_percentage("dislikes", debate) %></span>
   </div>
