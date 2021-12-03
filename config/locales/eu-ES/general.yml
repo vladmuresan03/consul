@@ -113,7 +113,7 @@ eu:
         title: Eztabaidei buruzko laguntza
         description: Ardura zaizun gaietan beste pertsona batzuekin ikuspuntuak elkarbanatzeko eztabaida bat hasi ezazu.
         help_text_1: "Herri eztabaida ezpazioa arduratzen duten gaiak argitaratzeko eta beste pertsona batzuekin ikuspuntuak elkarbanatzeko balio du."
-        help_text_2: 'Eztabaida bat irekitzeko beharrezkoa da {org}-(e)n erregistratzea. Erregistratutako erabiltzaileek irekita dauden eztabaidetan parte hartu dezakete eta bertan aurkitzen diren "Ados nago" edo "Ez nago ados" botoiekin baloratu ditzakete.'
+        help_text_2: 'Eztabaida bat irekitzeko beharrezkoa da %{org}-(e)n erregistratzea. Erregistratutako erabiltzaileek irekita dauden eztabaidetan parte hartu dezakete eta bertan aurkitzen diren "Ados nago" edo "Ez nago ados" botoiekin baloratu ditzakete.'
     new:
       form:
         submit_button: Eztabaida bat hasi
@@ -367,7 +367,6 @@ eu:
       supports_necessary: "%{number} babes behar dira"
       total_percent: '%100'
       archived: "Proposamen hau artxibatu egin da eta ezin du babesik jaso."
-      successful: "Proposamen honek babes nahiko jaso ditu eta %{voting}ra pasatuko da."
     show:
       author_deleted: Erabiltzailea ezabatuta
       code: "Proposamen kodea:"
@@ -660,9 +659,6 @@ eu:
       organization: Erakundeek ezin dute bozkatu.
       unfeasible: Proposamen bideragarriezinak ezin dira bozkatu.
       not_voting_allowed: Bozka epea itxita dago.
-      different_heading_assigned:
-        one: "Auzko bateko gastu proiektuak soilik babes ditzakezu"
-        other: "%{count} auzoetako gastu proiektuak soilik babes ditzakezu"
   welcome:
     feed:
       most_active:

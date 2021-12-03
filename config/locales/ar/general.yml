@@ -34,7 +34,6 @@ ar:
       moderator: المشرف
       responses:
         zero: لا توجد ردود
-        zero: "%{count} ردود"
         one: ردّ واحد
         two: "ردّان %{count}"
         few: "%{count} ردود"
@@ -42,7 +41,6 @@ ar:
         other: "%{count} ردود"
       responses_show:
         zero: لا توجد ردود
-        zero: "%{count} ردود (عرض)"
         one: "رد ّ 1 (عرض)"
         two: "%{count} ردود (عرض)"
         few: "%{count} ردود (عرض)"
@@ -50,7 +48,6 @@ ar:
         other: "%{count} ردود (عرض)"
       responses_collapse:
         zero: لا توجد ردود
-        zero: "%{count} إجابة (إخفاء)"
         one: "إجابة واحدة (إخفاء)"
         two: "%{count} إجابة (إخفاء)"
         few: "%{count} إجابة (إخفاء)"
@@ -59,7 +56,6 @@ ar:
       user_deleted: حذف المستخدم
       votes:
         zero: لا توجد أصوات
-        zero: "%{count} أصوات"
         one: صوت واحد
         two: "صوتان %{count}"
         few: "%{count} أصوات"
@@ -89,15 +85,13 @@ ar:
     debate:
       comments:
         zero: لا توجد تعليقات
-        zero: "%{count} تعليقات"
-        one: '%{count} تعليق'
+        one: 1 تعليق
         two: "%{count} تعليقات"
         few: "%{count} تعليقات"
         many: "%{count} تعليقات"
         other: "%{count} تعليقات"
       votes:
         zero: لا توجد أصوات
-        zero: "%{count} أصوات"
         one: صوت واحد
         two: "%{count} أصوات"
         few: "%{count} أصوات"
@@ -163,7 +157,6 @@ ar:
       author_deleted: تم حذف المستخدم
       comments:
         zero: لا توجد تعليقات
-        zero: "%{count} تعليق"
         one: تعليق واحد
         two: "%{count} تعليق"
         few: "%{count} تعليق"
@@ -225,7 +218,6 @@ ar:
         current_goal: الهدف الحالي
         supports:
           zero: لا يوجد دعم
-          zero: "دعم"
           one: 1 دعم
           two: "دعم"
           few: "دعم"
@@ -264,7 +256,6 @@ ar:
       notification_item:
         new_notifications:
           zero: "لا يوجد إشعارات جديدة"
-          zero: لديك %{count} إشعارات الجديدة
           one: لديك إشعار جديد
           two: لديك %{count} إشعارات الجديدة
           few: لديك %{count} إشعارات الجديدة
@@ -445,7 +436,6 @@ ar:
       already_supported: لقد قمت بالفعل بدعم هذا المقترح. شاركه!
       comments:
         zero: لا توجد تعليقات
-        zero: "%{count} تعليق"
         one: تعليق واحد
         two: "%{count} تعليق"
         few: "%{count} تعليق"
@@ -455,7 +445,6 @@ ar:
       support_title: دعم هذا المقترح
       supports:
         zero: لا يوجد دعم
-        zero: "%{count} يدعم"
         one: 1 دعم
         two: "%{count} يدعم"
         few: "%{count} يدعم"
@@ -463,7 +452,6 @@ ar:
         other: "%{count} يدعم"
       votes:
         zero: لا توجد أصوات
-        zero: "%{count} أصوات"
         one: صوت واحد
         two: "%{count} أصوات"
         few: "%{count} أصوات"
@@ -479,7 +467,6 @@ ar:
       code: "رمز المقترح:"
       comments:
         zero: لا توجد تعليقات
-        zero: "%{count} تعليق"
         one: تعليق واحد
         two: "%{count} تعليق"
         few: "%{count} تعليق"

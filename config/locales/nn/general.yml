@@ -34,23 +34,19 @@ nn:
       moderator: Moderator
       responses:
         zero: Ingen svar
-        zero: "%{count} svar"
         one: 1 svar
         other: "%{count} svar"
       responses_show:
         zero: Ingen svar
-        zero: "%{count} svar (vis)"
         one: "1 svar (vis)"
         other: "%{count} svar (vis)"
       responses_collapse:
         zero: Ingen svar
-        zero: "%{count} svar (skjul)"
         one: "1 svar (skjul)"
         other: "%{count} svar (skjul)"
       user_deleted: Brukeren er slettet
       votes:
         zero: Ingen stemmer
-        zero: "%{count} stemmer"
         one: 1 stemme
         other: "%{count} stemmer"
     form:
@@ -77,12 +73,10 @@ nn:
     debate:
       comments:
         zero: Ingen kommentarer
-        zero: "%{count} kommentarer"
         one: 1 kommentar
         other: "%{count} kommentarer"
       votes:
         zero: Ingen stemmer
-        zero: "%{count} stemmer"
         one: 1 stemme
         other: "%{count} stemmer"
     edit:
@@ -142,7 +136,6 @@ nn:
       author_deleted: Brukeren er slettet
       comments:
         zero: Ingen kommentarer
-        zero: "%{count} kommentarer"
         one: 1 kommentar
         other: "%{count} kommentarer"
       comments_title: Kommentarer
@@ -237,8 +230,7 @@ nn:
       notification_item:
         new_notifications:
           zero: "Du har ingen nye varsler"
-          zero: Du har %{count} nye varsler
-          one: Du har %{count} nye varsel
+          one: Du har 1 nye varsel
           other: Du har %{count} nye varsler
         notifications: Varsler
   notifications:
@@ -256,7 +248,7 @@ nn:
           other: Det er %{count} nye kommentarer på
         proposal_notification:
           zero: Du har %{count} nye varsler om
-          one: Du har %{count} ny varsel om
+          one: Du har 1 ny varsel om
           other: Du har %{count} nye varsler om
         replies_to:
           zero: Du har fått %{count} svar på din kommentar om
@@ -403,19 +395,16 @@ nn:
       already_supported: Du har allerede støttet dette forslaget. Del det!
       comments:
         zero: Ingen kommentarer
-        zero: "%{count} kommentarer"
         one: 1 kommentarer
         other: "%{count} kommentarer"
       support: Støtte
       support_title: Støtt dette forslaget
       supports:
         zero: Ingen støtte
-        zero: "%{count} støtte"
         one: 1 støtte
         other: "%{count} støtte"
       votes:
         zero: Ingen stemmer
-        zero: "%{count} stemmer"
         one: 1 stemme
         other: "%{count} stemmer"
       supports_necessary: "%{number} støtter trengs"
@@ -428,7 +417,6 @@ nn:
       code: "Forslagskode:"
       comments:
         zero: Ingen kommentarer
-        zero: "%{count} kommentarer"
         one: 1 kommentar
         other: "%{count} kommentarer"
       comments_tab: Kommentarer
