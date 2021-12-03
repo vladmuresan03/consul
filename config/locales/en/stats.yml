@@ -14,7 +14,7 @@ en:
     total: "Total"
     geozone: "District"
     no_demographic_data:
-      zero: ""
+      zero: "* There are %{count} participants."
       one: "* There is no demographic data for 1 participant."
       other: "* There is no demographic data for %{count} participants."
     budgets:
