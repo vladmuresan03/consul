@@ -1,5 +1,5 @@
 class SubscriptionsController < ApplicationController
-  before_action :set_user
+  before_action :set_user, :set_locale
   skip_authorization_check
 
   def edit
@@ -21,5 +21,15 @@ class SubscriptionsController < ApplicationController
       attributes = [:email_on_comment, :email_on_comment_reply, :email_on_direct_message,
                     :email_digest, :newsletter]
       params.require(:user).permit(*attributes)
+    end
+
+    def set_locale
+      if @user.locale && I18n.available_locales.include?(@user.locale.to_sym)
+        session[:locale] = @user.locale
+      end
+
+      session[:locale] ||= I18n.default_locale
+
+      I18n.locale = session[:locale]
     end
 end
